@@ -1,0 +1,271 @@
+/* Configurações gerais e alto contraste */
+:root {
+  --bg-pagina: #F1F5F9;
+  --bg-card: #FFFFFF;
+  --cor-primaria: #1E3A8A;
+  --cor-primaria-hover: #172554;
+  --texto-principal: #0F172A;
+  --texto-secundario: #334155;
+  --borda-padrao: #CBD5E1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--bg-pagina);
+  color: var(--texto-principal);
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: var(--cor-primaria);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.cabecalho p {
+  font-size: 1.1rem;
+  color: #E2E8F0;
+}
+
+/* Menu de Navegação */
+.menu-principal {
+  background-color: #0F172A;
+  padding: 12px 0;
+  margin-bottom: 32px;
+}
+
+.menu-lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.menu-lista a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+}
+
+.menu-lista a:hover {
+  background-color: var(--cor-primaria);
+}
+
+.menu-lista a:focus,
+.sala-mapa:focus,
+.btn-voltar:focus {
+  outline: 3px solid #F59E0B;
+  outline-offset: 2px;
+}
+
+/* Seções */
+.bloco-secao {
+  margin-bottom: 40px;
+}
+
+.titulo-secao {
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
+  margin-bottom: 10px;
+  border-bottom: 3px solid var(--cor-primaria);
+  padding-bottom: 6px;
+}
+
+.instrucao {
+  color: var(--texto-secundario);
+  margin-bottom: 20px;
+}
+
+/* Planta Simplificada da Escola */
+.planta-escola {
+  background-color: #E2E8F0;
+  border: 3px solid #475569;
+  border-radius: 12px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.sala-mapa {
+  background-color: var(--bg-card);
+  color: var(--texto-principal);
+  text-decoration: none;
+  border: 2px solid #334155;
+  border-radius: 10px;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  transition: transform 0.15s ease;
+}
+
+.sala-mapa:hover {
+  transform: translateY(-3px);
+  background-color: #EFF6FF;
+  border-color: var(--cor-primaria);
+}
+
+/* Diferenciação visual por setor (Texto + Estilo de borda + Cor) */
+.setor-acesso {
+  border-left: 8px solid #15803D;
+}
+
+.setor-admin {
+  border-left: 8px solid #1D4ED8;
+}
+
+.setor-estudo {
+  border-left: 8px dashed #7E22CE;
+}
+
+.setor-convivencia {
+  border-left: 8px solid #047857;
+  background-color: #ECFDF5;
+}
+
+.setor-apoio {
+  border-left: 8px double #B45309;
+}
+
+.tag-setor {
+  font-size: 0.78rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #E2E8F0;
+  color: #1E293B;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.nome-sala {
+  font-size: 1.15rem;
+}
+
+.sala-mapa small {
+  color: var(--texto-secundario);
+  font-size: 0.9rem;
+}
+
+.corredor-central {
+  grid-column: 1 / -1;
+  background-color: #CBD5E1;
+  border: 2px dashed #475569;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #1E293B;
+}
+
+.span-duplo {
+  grid-column: span 2;
+}
+
+/* Cards de Descrição dos Ambientes */
+.grid-descricoes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card-ambiente {
+  background-color: var(--bg-card);
+  border: 2px solid var(--borda-padrao);
+  border-left: 6px solid var(--cor-primaria);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-ambiente h3 {
+  font-size: 1.25rem;
+  color: var(--cor-primaria);
+  margin-bottom: 8px;
+}
+
+.localizacao {
+  font-size: 0.95rem;
+  color: #1E293B;
+  margin-bottom: 8px;
+}
+
+.card-ambiente p:last-child {
+  color: var(--texto-secundario);
+}
+
+/* Botão Voltar */
+.voltar-topo {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.btn-voltar {
+  display: inline-block;
+  background-color: var(--cor-primaria);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.btn-voltar:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 720px) {
+  .cabecalho h1 {
+    font-size: 1.6rem;
+  }
+
+  .planta-escola {
+    grid-template-columns: 1fr;
+  }
+
+  .span-duplo {
+    grid-column: span 1;
+  }
+
+  .grid-descricoes {
+    grid-template-columns: 1fr;
+  }
+}
