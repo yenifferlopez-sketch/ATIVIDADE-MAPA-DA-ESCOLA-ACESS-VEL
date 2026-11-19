@@ -1,0 +1,17 @@
+# 🗺️ Mapa Simplificado da Escola
+
+Página web desenvolvida em HTML5 e CSS3 para facilitar a localização e o entendimento dos principais ambientes de uma escola por meio de uma planta simplificada e descrições objetivas.
+
+## 📁 Estrutura do Projeto
+
+- `index.html`: Estrutura semântica com menu de navegação, planta interativa por âncoras e cards descritivos.
+- `style.css`: Estilização com alto contraste, diferenciação por bordas/setores e layout responsivo.
+- `README.md`: Documentação do projeto.
+
+## ♿ Boas Práticas de Acessibilidade Aplicadas
+
+- **Independência de cor**: Cada ambiente é identificado por ícone, nome por extenso, etiqueta de setor e estilo de borda.
+- **Navegação clara**: Menu superior e links internos na própria planta que levam diretamente à descrição de cada sala.
+- **Alto contraste e legibilidade**: Uso de fonte sem serifa (`Arial`), tamanho confortável e contraste elevado entre texto e fundo.
+- **HTML5 Semântico**: Uso adequado de `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` e `<footer>`.
+- **Responsividade**: Adaptação automática para telas de celulares e computadores utilizando `@media`.
